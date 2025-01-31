@@ -30,14 +30,14 @@ export default function Home() {
 
         {/* Image Section */}
         <div className="relative w-48 h-48 rounded-full overflow-hidden mb-8 shadow-xl">
-          <Image 
-            src="/images/your-image.jpg" 
-            alt="Profile Image"
-            layout="intrinsic" 
-            width={192} 
-            height={192} 
+          <Image
+            src="https://logos-world.net/wp-content/uploads/2021/09/MG-Motor-Logo-2021-present.png"
+            alt="MG Motor Logo"
+            width={192}
+            height={192}
             className="object-cover"
           />
+
         </div>
 
         {/* Description Section */}
