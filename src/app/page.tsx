@@ -5,19 +5,19 @@ export default function Home() {
   return (
     <>
       {/* Header Section */}
-      <header className="bg-blue-600 py-4">
+      <header className="bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-600 py-6 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-white text-3xl font-bold">My Website</h1>
+          <h1 className="text-white text-4xl font-extrabold tracking-wide">Manthan Gajjar</h1>
           <nav>
-            <ul className="flex space-x-6">
+            <ul className="flex space-x-6 text-white font-semibold">
               <li>
-                <Link href="/" className="text-white hover:text-gray-300">Home</Link>
+                <Link href="/" className="hover:text-yellow-300 transition">Home</Link>
               </li>
               <li>
-                <Link href="#about" className="text-white hover:text-gray-300">About</Link>
+                <Link href="#about" className="hover:text-yellow-300 transition">About</Link>
               </li>
               <li>
-                <Link href="#contact" className="text-white hover:text-gray-300">Contact</Link>
+                <Link href="#contact" className="hover:text-yellow-300 transition">Contact</Link>
               </li>
             </ul>
           </nav>
@@ -25,37 +25,36 @@ export default function Home() {
       </header>
 
       {/* Main Content Section */}
-      <main className="flex flex-col items-center justify-center bg-gray-50 py-16">
-        <h2 className="text-4xl text-center text-gray-800 font-semibold mb-4">
-          Welcome to My Website!
-        </h2>
-        
+      <main className="flex flex-col items-center justify-center bg-gradient-to-r from-cyan-400 via-teal-500 to-blue-500 text-white py-16">
+        <h2 className="text-5xl font-bold mb-8 text-center">Welcome to My Awesome Website!</h2>
+
         {/* Image Section */}
-        <div className="relative w-64 h-64 mb-6">
+        <div className="relative w-48 h-48 rounded-full overflow-hidden mb-8 shadow-xl">
           <Image 
             src="/images/your-image.jpg" 
-            alt="Image" 
-            layout="fill" 
-            objectFit="cover" 
-            className="rounded-full" 
+            alt="Profile Image"
+            layout="intrinsic" 
+            width={192} 
+            height={192} 
+            className="object-cover"
           />
         </div>
 
         {/* Description Section */}
-        <p className="text-center text-lg text-gray-700 max-w-2xl mx-auto mb-8">
-          Hi, I'm Manthan Gajjar. This is a responsive homepage built with Next.js and Tailwind CSS. Explore my website for more details!
+        <p className="text-lg text-center max-w-3xl mx-auto mb-8">
+          Hi! I'm <span className="font-semibold text-yellow-300">Manthan Gajjar</span>. This homepage is built with Next.js and Tailwind CSS, and it's fully responsive. Explore and enjoy the experience!
         </p>
 
         {/* Button Section */}
-        <a href="#contact" className="bg-blue-600 text-white py-2 px-4 rounded-full hover:bg-blue-500 transition duration-300">
-          Get in Touch
+        <a href="#contact" className="bg-yellow-500 text-black py-3 px-6 rounded-full text-lg font-semibold shadow-md hover:bg-yellow-400 transition">
+          Let's Connect!
         </a>
       </main>
 
       {/* Footer Section */}
-      <footer className="bg-blue-600 py-4 mt-12">
+      <footer className="bg-gradient-to-r from-indigo-500 via-purple-600 to-pink-500 py-4 mt-12">
         <div className="container mx-auto text-center text-white">
-          <p>&copy; 2025 Manthan Gajjar. All rights reserved.</p>
+          <p>&copy; 2025 Manthan Gajjar | All rights reserved.</p>
         </div>
       </footer>
     </>
