@@ -7,7 +7,7 @@ export default function Home() {
       {/* Header Section */}
       <header className="bg-gradient-to-r from-purple-500 via-indigo-500 to-blue-600 py-6 shadow-lg">
         <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-white text-4xl font-extrabold tracking-wide">Manthan Gajjar</h1>
+          <h1 className="text-white text-1xl font-extrabold tracking-wide">MG</h1>
           <nav>
             <ul className="flex space-x-6 text-white font-semibold">
               <li>
@@ -29,12 +29,12 @@ export default function Home() {
         <h2 className="text-5xl font-bold mb-8 text-center">Welcome to My Awesome Website!</h2>
 
         {/* Image Section */}
-        <div className="relative w-48 h-48 rounded-full overflow-hidden mb-8 shadow-xl">
+        <div className="relative w-48 rounded-full overflow-hidden mb-8 shadow-xl">
           <Image
             src="https://logos-world.net/wp-content/uploads/2021/09/MG-Motor-Logo-2021-present.png"
             alt="MG Motor Logo"
             width={192}
-            height={192}
+            height={0}
             className="object-cover"
           />
 
