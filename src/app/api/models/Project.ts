@@ -6,7 +6,7 @@ export interface IProject extends Document {
   image: string;
   link: string;
 }
-
+  
 const ProjectSchema: Schema = new Schema(
   {
     name: { type: String, required: true },

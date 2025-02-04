@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Footer from "./footer";
 
 export default function Header() {
   return (
@@ -61,8 +60,6 @@ export default function Header() {
           Let's Connect!
         </a>
       </main>
-
-<Footer/>
     </>
   );
 }
